@@ -6,8 +6,7 @@ import os
 import json
 import urllib.request
  
-os.system("TITLE Noticias habbo")
-os.system("cls")
+
 with open("config.json") as f:
     config = json.load(f) 
  
@@ -34,7 +33,8 @@ descripcion = soup.find_all('p', class_='news-header__wrapper news-header__summa
 
 
 
-
+os.system(f"TITLE Noticias habbo - HOTEL: habbo.{hotel}")
+os.system("cls")
 
 
   
@@ -42,10 +42,10 @@ descripcion = soup.find_all('p', class_='news-header__wrapper news-header__summa
 
 @bot.command()
 async def noticias(ctx): 
-    embed = discord.Embed(title=f"{titulo}", description=f"{descripcion}" "\n\n\n[Ver Noticia en Habbo.es]"+"("+ f"https://habbo.{hotel}"+urlNoticia['href']+ ")", color=discord.Colour.random())
+    embed = discord.Embed(title=f"{titulo}", description=f"{descripcion}" f"\n\n\n[Ver Noticia en Habbo.{hotel}]"+"("+ f"https://habbo.{hotel}"+urlNoticia['href']+ ")", color=discord.Colour.random())
     embed.set_image(url=f"{imagen['src']}" )
-    embed.set_author(name="Habbo [ES]", icon_url="https://i.imgur.com/0UDuO3n.png")
-    embed.set_footer(text="habbo[ES]", icon_url="https://i.imgur.com/6ePWlHz.png")
+    embed.set_author(name=f"Habbo [{HotelNoticia}]", icon_url="https://i.imgur.com/0UDuO3n.png")
+    embed.set_footer(text=f"habbo [{HotelNoticia}]", icon_url="https://i.imgur.com/6ePWlHz.png")
     await ctx.send(embed=embed)
    
  
