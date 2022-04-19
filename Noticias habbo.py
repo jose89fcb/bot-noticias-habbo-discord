@@ -6,8 +6,8 @@ import os
 import json
 import urllib.request
  
-
-
+os.system("TITLE Noticias habbo")
+os.system("cls")
 with open("config.json") as f:
     config = json.load(f) 
  
@@ -49,6 +49,11 @@ async def noticias(ctx):
     await ctx.send(embed=embed)
    
  
+
+
+@bot.event
+async def on_ready():
+    print("BOT listo!")
 
 
 
