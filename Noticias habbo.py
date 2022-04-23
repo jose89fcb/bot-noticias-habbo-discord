@@ -49,7 +49,11 @@ async def noticias(ctx):
     await ctx.send(embed=embed)
    
  
-
+@bot.event
+async def on_command_error(ctx, error):
+  if isinstance(error, commands.CommandNotFound):
+    await ctx.send('El comando no existe 🤷🏼‍♂️🔍')
+  
 
 @bot.event
 async def on_ready():
