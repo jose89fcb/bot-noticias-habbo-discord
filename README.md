@@ -5,7 +5,7 @@ ABRIR EL ARCHIVOS config.json
 
 comando => Añade cualquier cosa ejemplo "!" => "*" => ">"
 
-HotelNoticia: => es -> en -> it -> de-> fr -> fi -> tr -> nl -> pt 
+NoticiasHotel: => es -> en -> it -> de-> fr -> fi -> tr -> nl -> pt 
 
 hotel: => es -> com ->it -> de -> fr -> com.tr ->nl -> com.br
 
