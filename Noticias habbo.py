@@ -25,6 +25,7 @@ hotel=config["hotel"] ## es -> com ->it -> de -> fr -> com.tr ->nl -> com.br
 titulo = soup.find_all('h2', class_='news-header__title')[1].text
 
 imagen = soup.find_all('img')[2]
+imagenPeque = soup.find_all('img')[3]
 
 urlNoticia = soup.find_all('a')[3]
 
@@ -46,6 +47,8 @@ async def noticias(ctx):
     embed.set_image(url=f"{imagen['src']}" )
     embed.set_author(name=f"Habbo [{HotelNoticia}]",  icon_url=config["Bandera"])
     embed.set_footer(text=f"habbo [{HotelNoticia}]", icon_url="https://i.imgur.com/6ePWlHz.png")
+
+    embed.set_thumbnail(url=f"{imagenPeque['src']}" )
     await ctx.send(embed=embed)
    
  
