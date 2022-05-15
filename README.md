@@ -12,7 +12,8 @@ hotel: => es -> com ->it -> de -> fr -> com.tr ->nl -> com.br
 token_discord => Debes de añadir el token de discord, obten uno en: => https://discord.com/developers/applications
 
 
-Bandera:
+<b>Bandera</b>
+<br>
 España: https://i.imgur.com/IplIfNP.png
 <br>
 Brasil: https://i.imgur.com/YGQlPor.png
