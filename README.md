@@ -18,7 +18,7 @@ España: https://i.imgur.com/IplIfNP.png
 <br>
 Brasil: https://i.imgur.com/YGQlPor.png
 <br>
-Nederlands: https://i.imgur.com/fC8eIvR.png
+Holandes: https://i.imgur.com/fC8eIvR.png
 <br>
 Aleman: https://i.imgur.com/vUgY11U.png
 <br>
